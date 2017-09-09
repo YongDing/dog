@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^$', include('we.urls')),
+    url(r'^blockchain/', include('we.urls')),
     #url(r'^admin/', admin.site.urls),
 ]

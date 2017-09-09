@@ -17,6 +17,5 @@ def index(request):
 
 def mvBrick(request):
     info = moveBrickInfo()
-    jsonObj = {"result":info}
-    jsonStr = json.dumps(jsonObj)
+    jsonStr = json.dumps(info)
     return HttpResponse(jsonStr, content_type='application/json; charset=utf-8')
